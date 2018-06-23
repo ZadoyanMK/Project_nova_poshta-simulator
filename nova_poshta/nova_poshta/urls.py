@@ -19,5 +19,7 @@ from app_sending_items import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('order/', views.OrderFormView.as_view())
+    path('order/', views.OrderFormView.as_view()),
+    path('add/user', views.UserCreateView.as_view())
+
 ]

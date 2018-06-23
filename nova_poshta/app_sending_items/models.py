@@ -7,6 +7,7 @@ class User(models.Model):
     FIO = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
+    password = models.CharField(max_length=60)
     email = models.EmailField()
 
 

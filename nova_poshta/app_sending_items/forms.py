@@ -1,5 +1,5 @@
 from django import forms
-from .models import Order
+from .models import Order, User
 
 
 # class TaskForm(forms.Form):
@@ -7,6 +7,16 @@ from .models import Order
 #         max_length=20
 #     )
 #     checked = forms.BooleanField(required=False)
+class UserModelForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = [
+            'FIO',
+            'phone_number',
+            'location',
+            'email',
+            'password',
+        ]
 
 
 class OrderModelForm(forms.ModelForm):
@@ -17,9 +27,6 @@ class OrderModelForm(forms.ModelForm):
             'order_name',
             'getter'
         ]
-        labels = {
-            'text': 'Input text here'
-        }
 
     def clean(self):
         text = self.data['text']
