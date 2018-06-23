@@ -2,21 +2,20 @@ from django import forms
 from .models import Order
 
 
-class TaskForm(forms.Form):
-    text = forms.CharField(
-        max_length=20
-    )
-    checked = forms.BooleanField(required=False)
+# class TaskForm(forms.Form):
+#     text = forms.CharField(
+#         max_length=20
+#     )
+#     checked = forms.BooleanField(required=False)
 
 
-class TaskModelForm(forms.ModelForm):
+class OrderModelForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = [
             'weight',
             'order_name',
-            'getter',
-            'transporting'
+            'getter'
         ]
         labels = {
             'text': 'Input text here'

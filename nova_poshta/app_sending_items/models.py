@@ -4,15 +4,15 @@ from django.db import models
 
 
 class User(models.Model):
-    FIO = models.CharField()
-    phone_number = models.CharField()
-    location = models.CharField()
+    FIO = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=255)
+    location = models.CharField(max_length=255)
     email = models.EmailField()
 
 
 class Order(models.Model):
     weight = models.IntegerField(default=0)
-    order_name = models.CharField()
+    order_name = models.CharField(max_length=255)
     sender = models.ForeignKey(
         'User',
         related_name='Order_sender',
@@ -22,6 +22,7 @@ class Order(models.Model):
         'User',
         related_name='Order_getter',
         on_delete=models.CASCADE,
+
     )
     transporting = models.ForeignKey(
         'Transporting',
@@ -50,12 +51,12 @@ class Transporting(models.Model):
 
 
 class Punkt(models.Model):
-    location_name = models.CharField()
+    location_name = models.CharField(max_length=255)
     location_x = models.FloatField(default=0)
     location_y = models.FloatField(default=0)
 
 
 class Vehicle(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length=255)
     speed = models.IntegerField()
     max_weight = models.IntegerField()

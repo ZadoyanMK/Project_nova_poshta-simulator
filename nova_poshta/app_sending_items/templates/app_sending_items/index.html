@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <form method="post">
-        {{form.as_p}}
-    </form>
+    <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Send message" />
+</form>
 </head>
 <body>
 
