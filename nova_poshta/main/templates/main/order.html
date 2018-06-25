@@ -1,0 +1,11 @@
+{% extends 'main/main.html' %}
+
+{% block order %}
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Create order</button>
+        <button type="reset">Reset</button>
+        <a href="to_main">Cancel creation</a>
+    </form>
+{% endblock %}

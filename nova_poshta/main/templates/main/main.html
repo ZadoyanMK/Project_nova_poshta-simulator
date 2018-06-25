@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    {% if user.is_authenticated %}
+        <div style="float: right;">
+            <p> Hello
+                {% if user.first_name == '' or user.last_name == '' %}
+                    {{user.username}}
+                {% else %}
+                    {{user.first_name}} {{user.last_name}}
+                {% endif %}
+            </p>
+            <p>
+                <a href="logout">logout</a>
+            </p>
+        </div>
+    {% else %}
+        <div>
+            <a href="login">Sign in</a>
+        </div>
+
+        <div>
+            <a href="reg">Sign up</a>
+        </div>
+        <div>
+            {% block reg %}{%endblock%}
+        </div>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+        <div>
+            Current orders:
+            {% if not orders_current %}
+                list is empty
+            {% else %}
+            <ul>
+                {% for item in orders_current %}
+                    <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+            {%endif%}
+        </div>
+        <div>
+            Finished orders:
+            {% if not orders_finished %}
+                list is empty
+            {% else %}
+            <ul>
+                {% for item in orders_finished %}
+                    <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+            {%endif%}
+        </div>
+
+        <div>
+            <a href="add_order">Create new order</a>
+        </div>
+        <div>
+            {% block order %}{% endblock %}
+        </div>
+    {% endif %}
+</body>
+</html>
