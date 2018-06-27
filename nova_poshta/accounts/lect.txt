@@ -1,0 +1,47 @@
+https://www.codingforentrepreneurs.com/blog/celery-redis-django/
+http://docs.celeryproject.org/en/latest/django/first-steps-with-django.html
+
+https://github.com/celery/django-celery
+
+
+
+Change password:
+    user.set_password('...')
+
+
+user = authenticate(username=..., password=...) - check if user is real
+if user is not None:
+    if user.is_active:
+        login(request, user) - login user
+    else:
+        return a disabled acc
+else:
+    return invalid login/password
+
+
+Permission PermissionGroup
+
+user.user_permission.add()
+                    .remove()
+                    .clear()
+
+foo.add_bar
+
+user.has_perm('foo.add_bar')  -->  True/False
+
+
+from django.contrib.auth.decorators import login_required
+!!!!   @login_required(login_url='/accounts/login/')   !!!!
+
+LoginRequiredMixin
+PermissionRequiredMixin
+
+def has_change_permission()
+    myuser.groups
+        user.permissions
+
+
+
+/------------------logging------------------/
+>>> import logging
+>>> logger = logging.getLogger('manual')

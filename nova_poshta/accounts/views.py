@@ -8,7 +8,7 @@ from django.contrib.auth import login, logout
 from .forms import UserRegistrationForm
 
 from django.core.mail import send_mail
-from .tasks import SignUp
+from .tasks import *
 # from .forms import OrderModelForm
 # from .models import *
 
@@ -33,7 +33,8 @@ class UserLoginView(FormView):
 
     def form_valid(self, form):
         login(self.request, form.get_user())
-        SignUp.delay(self.request.user)
+        # SignUp.delay(self.request.user)
+        # add.delay(1, 2)
         return HttpResponseRedirect(self.success_url)
 
 

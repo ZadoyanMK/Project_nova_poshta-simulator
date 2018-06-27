@@ -31,6 +31,29 @@ ALLOWED_HOSTS = [
     '0.0.0.0'
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django.request': {
+                    'handlers': ['file'],
+                    'level': 'DEBUG',
+                    'propagate': True,
+        },
+        'manual': {
+                    'handlers': ['file'],
+                    'level': 'DEBUG',
+                    'propagate': True,
+        },
+    },
+}
 
 # Application definition
 
@@ -43,8 +66,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'accounts',
-    'djcelery'
+    'djcelery',
+    # 'django_celery_beat',
+    # 'django_celery_results',
 ]
+
+# CELERY_BROKER_URL = 'redis://localhost:6379'
+# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+# CELERY_ACCEPT_CONTENT = ['application/json']
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_SERIALIZER = 'json'
+# # CELERY_TIMEZONE = TIME_ZONE
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
