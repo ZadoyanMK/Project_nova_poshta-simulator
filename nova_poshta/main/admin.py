@@ -5,4 +5,3 @@ from .models import Punkt, Vehicle, Order
 admin.site.register(Punkt)
 admin.site.register(Vehicle)
 admin.site.register(Order)
-

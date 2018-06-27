@@ -52,6 +52,7 @@ class Punkt(models.Model):
 
 
 class Vehicle(models.Model):
+    
     time_leaving = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=100)
     speed = models.IntegerField()
