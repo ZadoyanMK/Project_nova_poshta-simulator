@@ -4,6 +4,16 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 
+class Messages(models.Model):
+    user = models.ForeignKey(
+        User,
+        related_name='Message_getter',
+        on_delete=models.CASCADE,
+    )
+    sender = models.CharField(max_length=60)
+    text_message = models.TextField(max_length=255)
+
+
 class Order(models.Model):
     weight = models.IntegerField()
     order_name = models.CharField(max_length=100)
@@ -57,7 +67,21 @@ class Vehicle(models.Model):
     name = models.CharField(max_length=100)
     speed = models.IntegerField()
     max_weight = models.IntegerField()
-    max_way = models.IntegerField()
+    punkt_to = models.ForeignKey(
+        'Punkt',
+        on_delete=models.CASCADE,
+        related_name='Vehicle_punkt_to'
+    )
+    punkt_where_staying = models.ForeignKey(
+        'Punkt',
+        on_delete=models.CASCADE,
+        related_name='Vehicle_punkt_where_staying'
+    )
 
     def __str__(self):
-        return 'Name - %s, weight - %s' % (self.name, self.max_weight)
+        return 'Name - %s, weight - %s, staying in %s, going to %s' % (
+            self.name,
+            self.max_weight,
+            self.punkt_where_staying,
+            self.punkt_to
+        )

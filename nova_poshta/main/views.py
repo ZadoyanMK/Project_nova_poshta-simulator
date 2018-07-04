@@ -1,3 +1,5 @@
+from __future__ import absolute_import, unicode_literals
+
 from django.views.generic import TemplateView, View, ListView, DetailView
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.edit import FormView
@@ -23,9 +25,11 @@ class MainFormView(TemplateView):
         if request.user.is_authenticated:
             orders_current = Order.objects.filter(sender=request.user, completed=False)
             orders_finished = Order.objects.filter(sender=request.user, completed=True)
+            messages = Messages.objects.filter(user=request.user)
             ctx = {}
             ctx['orders_current'] = orders_current
             ctx['orders_finished'] = orders_finished
+            ctx['messages'] = messages
             return render(request, self.template_name, ctx)
         else:
             return render(request, self.template_name, {})

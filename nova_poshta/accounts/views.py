@@ -8,7 +8,7 @@ from django.contrib.auth import login, logout
 from .forms import UserRegistrationForm
 
 from django.core.mail import send_mail
-from .tasks import *
+# from .tasks import *
 # from .forms import OrderModelForm
 # from .models import *
 

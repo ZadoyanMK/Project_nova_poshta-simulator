@@ -3,6 +3,22 @@ from .models import Order, Vehicle
 # from django.contrib.auth.models import
 
 
+def choose_vehicle(weight, punkt_to, punkt_from):
+    vehicles = Vehicle.objects.filter(
+        punkt_to=punkt_to,
+        punkt_where_staying=punkt_from
+    ).order_by('-time_leaving')
+
+    for veh in vehicles:
+        if veh.max_weight > weight:
+            Vehicle.objects.filter(
+                name=veh.name
+            ).update(max_weight=veh.max_weight - weight)
+            return veh
+
+    return Vehicle.objects.first()
+
+
 class OrderModelForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -18,7 +34,7 @@ class OrderModelForm(forms.ModelForm):
 
     def save(self, request, commit=True):
         order = super(OrderModelForm, self).save(commit=False)
-        order.vehicle = Vehicle.objects.first()
+        order.vehicle = choose_vehicle(order.weight, order.punkt_to, order.punkt_from)
         order.sender = request.user
         if commit:
             order.save()

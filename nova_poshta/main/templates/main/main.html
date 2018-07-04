@@ -37,6 +37,14 @@
 
 
     {% if user.is_authenticated %}
+        <div style="float: right; padding-top: 100px;">
+            <div>Messages:</div>
+            <div>
+                {% for message in messages %}
+                    {{message.as_p}}
+                {% endfor %}
+            </div>
+        </div>
         <div>
             Current orders:
             {% if not orders_current %}
