@@ -11,6 +11,7 @@ from django.http import HttpResponseRedirect
 
 from .forms import OrderModelForm
 from .models import *
+from .tasks import *
 
 
 # Create your views here.
@@ -23,12 +24,17 @@ class MainFormView(TemplateView):
 
     def get(self, request):
         if request.user.is_authenticated:
-            orders_current = Order.objects.filter(sender=request.user, completed=False)
-            orders_finished = Order.objects.filter(sender=request.user, completed=True)
+            orders_searching = Order.objects.filter(sender=request.user, status=Order.STATUS_SEARCHING_FOR_TRANSPORT)
+            orders_waiting = Order.objects.filter(sender=request.user, status=Order.STATUS_WAITING_FOR_TRANSPORTING)
+            orders_sending = Order.objects.filter(sender=request.user, status=Order.STATUS_SENDING)
+            orders_finished = Order.objects.filter(sender=request.user, status=Order.STATUS_SENDED)
             messages = Messages.objects.filter(user=request.user)
             ctx = {}
-            ctx['orders_current'] = orders_current
+
+            ctx['orders_waiting'] = orders_waiting
+            ctx['orders_sending'] = orders_sending
             ctx['orders_finished'] = orders_finished
+            ctx['orders_searching'] = orders_searching
             ctx['messages'] = messages
             return render(request, self.template_name, ctx)
         else:
@@ -41,13 +47,19 @@ class OrderFormView(FormView):
     success_url = reverse_lazy('form-main')
 
     def get(self, request, *args, **kwargs):
-        orders_current = Order.objects.filter(sender=request.user, completed=False)
-        orders_finished = Order.objects.filter(sender=request.user, completed=True)
-        form = self.form_class
+        orders_searching = Order.objects.filter(sender=request.user, status=Order.STATUS_SEARCHING_FOR_TRANSPORT)
+        orders_waiting = Order.objects.filter(sender=request.user, status=Order.STATUS_WAITING_FOR_TRANSPORTING)
+        orders_sending = Order.objects.filter(sender=request.user, status=Order.STATUS_SENDING)
+        orders_finished = Order.objects.filter(sender=request.user, status=Order.STATUS_SENDED)
+        messages = Messages.objects.filter(user=request.user)
         ctx = {}
-        ctx['orders_current'] = orders_current
+
+        ctx['orders_waiting'] = orders_waiting
+        ctx['orders_sending'] = orders_sending
         ctx['orders_finished'] = orders_finished
-        ctx['form'] = form
+        ctx['orders_searching'] = orders_searching
+        ctx['messages'] = messages
+        ctx['form'] = self.form_class
         return render(request, self.template_name, ctx)
 
     def form_valid(self, form):

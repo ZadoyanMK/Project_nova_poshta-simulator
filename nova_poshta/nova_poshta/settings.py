@@ -1,4 +1,3 @@
-from __future__ import absolute_import, unicode_literals
 """
 Django settings for nova_poshta project.
 
@@ -67,18 +66,8 @@ INSTALLED_APPS = [
     'main',
     'accounts',
     # 'django_celery_beat',
-    # 'django_celery_results',
+    'django_celery_results',
 ]
-
-# Celery settings
-
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-
-#: Only add pickle to this list if your broker is secured
-#: from unwanted access (see userguide/security.html)
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_RESULT_BACKEND = 'django-db'
-CELERY_TASK_SERIALIZER = 'json'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -146,7 +135,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
@@ -159,3 +148,32 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# The following lines may contains pseudo-code
+
+from celery.schedules import crontab
+
+# Other Celery settings
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Europe/Kiev'
+CELERY_BEAT_SCHEDULE = {
+    'start_transporting': {
+            'task': 'main.tasks.start_transporting',
+            'schedule': 1.0, #crontab(minute=3, hour=22),
+    },
+    'stop_transporting': {
+            'task': 'main.tasks.stop_transporting',
+            'schedule': 1.0,
+    },
+    'search_vehicle': {
+            'task': 'main.tasks.search_vehicle',
+            'schedule': 1.0,
+    },
+}
+

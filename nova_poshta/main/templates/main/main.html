@@ -41,17 +41,54 @@
             <div>Messages:</div>
             <div>
                 {% for message in messages %}
-                    {{message.as_p}}
+                    <hr>
+                    <div>
+                        <p>
+                            Sender: {{message.sender}}
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Message:
+                        </p>
+                        <p>
+                            {{message.text_message}}
+                        </p>
+                    </div>
                 {% endfor %}
             </div>
         </div>
         <div>
-            Current orders:
-            {% if not orders_current %}
+            Searching for vehicle orders:
+            {% if not orders_searching %}
                 list is empty
             {% else %}
             <ul>
-                {% for item in orders_current %}
+                {% for item in orders_searching %}
+                    <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+            {%endif%}
+        </div>
+        <div>
+            Waiting for transporting orders:
+            {% if not orders_waiting %}
+                list is empty
+            {% else %}
+            <ul>
+                {% for item in orders_waiting %}
+                    <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+            {%endif%}
+        </div>
+        <div>
+            Sending orders:
+            {% if not orders_sending %}
+                list is empty
+            {% else %}
+            <ul>
+                {% for item in orders_sending %}
                     <li>{{item}}</li>
                 {% endfor %}
             </ul>

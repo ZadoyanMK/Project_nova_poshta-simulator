@@ -8,6 +8,7 @@
     <orderEntry type="jdk" jdkName="Python 3.6 (Project_nova_poshta-simulator)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Light-it" />
+    <orderEntry type="module" module-name="django-celery-example" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

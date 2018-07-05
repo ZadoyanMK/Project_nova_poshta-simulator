@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+from datetime import timedelta
+
 # Create your models here.
 
 
@@ -12,6 +14,13 @@ class Messages(models.Model):
     )
     sender = models.CharField(max_length=60)
     text_message = models.TextField(max_length=255)
+
+    def __str__(self):
+        return 'Sender: %s, message: %s, getter: %s' % (
+            self.text_message,
+            self.user.username,
+            self.sender
+        )
 
 
 class Order(models.Model):
@@ -38,9 +47,23 @@ class Order(models.Model):
     vehicle = models.ForeignKey(
         'Vehicle',
         on_delete=models.CASCADE,
-        related_name='Transporting_vehicle'
+        related_name='Transporting_vehicle',
+        null=True,
     )
-    completed = models.BooleanField(default=False)
+
+    STATUS_CREATING = 0
+    STATUS_SENDED = 100
+    STATUS_SENDING = 80
+    STATUS_SEARCHING_FOR_TRANSPORT = 25
+    STATUS_WAITING_FOR_TRANSPORTING = 60
+    STATUSES = (
+        (STATUS_CREATING, 'Creating'),
+        (STATUS_SENDED, 'Sended'),
+        (STATUS_SENDING, 'Sending'),
+        (STATUS_SEARCHING_FOR_TRANSPORT, 'Searching for transport'),
+        (STATUS_WAITING_FOR_TRANSPORTING, 'Waiting for transporting'),
+    )
+    status = models.SmallIntegerField(choices=STATUSES, default=STATUS_CREATING)
 
     def __str__(self):
         return 'Order: %s, from %s to %s, sender: %s, getter: %s' % (
@@ -63,10 +86,11 @@ class Punkt(models.Model):
 
 class Vehicle(models.Model):
     
-    time_leaving = models.DateTimeField(auto_now_add=True)
+    time_leaving = models.DateTimeField()
+    time_arrival = models.DateTimeField()
     name = models.CharField(max_length=100)
-    speed = models.IntegerField()
     max_weight = models.IntegerField()
+    total_weight = models.IntegerField(default=0)
     punkt_to = models.ForeignKey(
         'Punkt',
         on_delete=models.CASCADE,
@@ -77,6 +101,14 @@ class Vehicle(models.Model):
         on_delete=models.CASCADE,
         related_name='Vehicle_punkt_where_staying'
     )
+
+    STATUS_STOPPED = 0
+    STATUS_MOVING = 100
+    STATUSES = (
+        (STATUS_STOPPED, 'Waiting for moving'),
+        (STATUS_MOVING, 'Moving'),
+    )
+    status = models.SmallIntegerField(choices=STATUSES, default=STATUS_STOPPED)
 
     def __str__(self):
         return 'Name - %s, weight - %s, staying in %s, going to %s' % (

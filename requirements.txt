@@ -1,4 +1,4 @@
 django
-celery>=4.0
+celery
 redis
 django-celery-results
