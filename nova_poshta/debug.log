@@ -1470,3 +1470,5 @@ Traceback (most recent call last):
   File "/home/miroslav/PycharmProjects/Project_nova_poshta-simulator/venv/lib/python3.6/site-packages/django/db/models/base.py", line 495, in __init__
     raise TypeError("'%s' is an invalid keyword argument for this function" % kwarg)
 TypeError: 'password1' is an invalid keyword argument for this function
+Not Found: /favicon.ico
+Not Found: /favicon.ico
