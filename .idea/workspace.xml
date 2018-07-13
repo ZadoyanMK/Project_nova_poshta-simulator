@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90412e78-05b4-4eb3-bc80-e72dbc8f5d09" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../Light-it/.idea/Light-it.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Light-it/.idea/Light-it.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova_poshta/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/nova_poshta/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova_poshta/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/nova_poshta/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nova_poshta/main/templates/main/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/nova_poshta/main/templates/main/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django-celery-example/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../django-celery-example/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django-celery-example/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../django-celery-example/requirements.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/venv/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="lect.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../Light-it/lect.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1992">
+                  <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="384">
+                    <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/main/templates/main/order.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="30" selection-start-column="30" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/main/tasks.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#56#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/main/templates/main/main.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-936">
+                  <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/requirements.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/nova_poshta/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3842">
+                  <caret line="174" column="46" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/__init__.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/templates/accounts/index.html">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/main/forms.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                  <folding>
+                    <element signature="e#0#24#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/nova_poshta/main/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="260">
+                  <caret line="27" column="14" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/nova_poshta/app_sending_items/templates/app_sending_items/index.html" />
+        <option value="$PROJECT_DIR$/nova_poshta/app_sending_items/admin.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/app_sending_items/views.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/app_sending_items/forms.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/app_sending_items/models.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/myapp/admin.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/myapp/models.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/myapp/forms.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/myapp/views.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/myapp/templates/myapp/index.html" />
+        <option value="$PROJECT_DIR$/nova_poshta/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/nova_poshta/urls.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/templates/accounts/index.html" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/migrations/0004_auto_20180625_1202.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/urls.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/templates/tasks.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/tasks.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/templates/email_signup.html" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/views.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/__init__.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/models.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/../mysite/requirements.txt" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/mysite/celery.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/mysite/__init__.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/core/tasks.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/core/forms.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/core/views.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/../mysite/mysite/core/templates/core/index.html" />
+        <option value="$PROJECT_DIR$/../django-celery-example/requirements.txt" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/admin.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/templates/main/main.html" />
+        <option value="$PROJECT_DIR$/nova_poshta/nova_poshta/сelery.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/nova_poshta/__init__.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/models.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/views.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/forms.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/lect.txt" />
+        <option value="$PROJECT_DIR$/../Light-it/lect.txt" />
+        <option value="$PROJECT_DIR$/nova_poshta/accounts/tasks.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/nova_poshta/settings.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/tasks.py" />
+        <option value="$PROJECT_DIR$/nova_poshta/main/templates/main/order.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="87" />
+    <option name="y" value="160" />
+    <option name="width" value="1823" />
+    <option name="height" value="796" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_nova_poshta-simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_nova_poshta-simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+              <item name="nova_poshta" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Web-application-Articles" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nova_poshta/accounts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90412e78-05b4-4eb3-bc80-e72dbc8f5d09" name="Default" comment="" />
+      <created>1529767797657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529767797657</updated>
+    </task>
+    <task id="LOCAL-00001" summary="models">
+      <created>1529768593937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529768593937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="almost done">
+      <created>1529936812921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529936812921</updated>
+    </task>
+    <task id="LOCAL-00003" summary="almost done">
+      <created>1530108733920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530108733920</updated>
+    </task>
+    <task id="LOCAL-00004" summary="almost done">
+      <created>1530801320038</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1530801320038</updated>
+    </task>
+    <task id="LOCAL-00005" summary="nova_poshta">
+      <created>1530827791170</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530827791170</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11491829" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3293348" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23861171" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="models" />
+    <MESSAGE value="almost done" />
+    <MESSAGE value="nova_poshta" />
+    <option name="LAST_COMMIT_MESSAGE" value="nova_poshta" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Light-it/django_proj/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Light-it/django_proj2/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="80" column="115" selection-start-line="80" selection-start-column="97" selection-end-line="80" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Light-it/django_proj/django_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Light-it/folder/venv/pip-selfcheck.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Light-it/blog/posts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="31" selection-start-line="31" selection-end-line="43" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mysite/requirements.txt" />
+    <entry file="file://$PROJECT_DIR$/../Light-it/folder/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/mysite/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/mysite/celery.py" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/mysite/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/core/tasks.py" />
+    <entry file="file://$PROJECT_DIR$/nova_poshta/nova_poshta/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/core/views.py" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/mysite/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/core/templates/core/index.html" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/core/forms.py" />
+    <entry file="file://$PROJECT_DIR$/../mysite/mysite/core/apps.py" />
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/mysite/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/mysite/core/tasks.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/mysite/core/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../django-celery-example/mysite/core/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/celery/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/celery/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1819" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/nova_poshta/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/nova_poshta/сelery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="60" column="34" lean-forward="true" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/lect.txt" />
+    <entry file="file://$PROJECT_DIR$/../Light-it/lect.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1992">
+          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="384">
+            <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/tasks.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/nova_poshta/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="174" column="46" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/accounts/templates/accounts/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/templates/main/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova_poshta/main/templates/main/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
