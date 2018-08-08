@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../Light-it/.idea/Light-it.iml" filepath="$PROJECT_DIR$/../Light-it/.idea/Light-it.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Project_nova_poshta-simulator.iml" filepath="$PROJECT_DIR$/.idea/Project_nova_poshta-simulator.iml" />
       <module fileurl="file://$PROJECT_DIR$/../django-celery-example/.idea/django-celery-example.iml" filepath="$PROJECT_DIR$/../django-celery-example/.idea/django-celery-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scrapy-parsing/.idea/scrapy-parsing.iml" filepath="$PROJECT_DIR$/../scrapy-parsing/.idea/scrapy-parsing.iml" />
     </modules>
   </component>
 </project>
